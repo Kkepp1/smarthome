@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@raw/neni"
+    tools:context=".MainActivity">
+    /////////////////////////////////bottom navigation//////////////////////////////////////////
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:background="#BF3E3B3B"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        app:labelVisibilityMode="unlabeled"
+        app:itemIconTint="@drawable/tab_color"
+        app:itemIconSize="33dp"
+        app:menu="@menu/navigation_menu" />
+
+    //////////////////////////////////giao dien///////////////////////////////////////////////
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="800dp">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="37dp"
+                android:layout_marginTop="50dp"
+                android:text="HOME"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="100dp"
+                android:text="Ha Noi"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="120dp"
+                android:text="---"
+                android:textColor="@color/white"
+                android:textSize="47dp" />
+
+
+            <TextView
+                android:id="@+id/checkTv"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="59dp"
+                android:background="@drawable/circle" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="180dp"
+                app:srcCompat="@drawable/ic_drop" />
+
+            <TextView
+                android:id="@+id/hum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="179dp"
+                android:text="54%"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="240dp"
+                android:text="Appliance"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+            `
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="310dp">
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:columnCount="2"
+                    android:rowCount="5"
+                    tools:layout_editor_absoluteY="260dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card11"
+                        android:layout_height="100dp"
+                        android:layout_row="0"
+                        android:layout_column="0"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="15dp"
+                        app:cardBackgroundColor="#A15A5252"
+                        app:cardCornerRadius="10dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/icon11"
+                                android:layout_width="55dp"
+                                android:layout_height="53dp"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/ic_doorin" />
+
+                            <TextView
+                                android:id="@+id/text11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_above="@+id/icon11"
+                                android:layout_centerHorizontal="true"
+                                android:text="Close"
+                                android:textColor="@color/white" />
+
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+                    ///2
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card12"
+                        android:layout_height="100dp"
+                        android:layout_row="0"
+
+                        android:layout_column="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="15dp"
+                        app:cardBackgroundColor="#A15A5252"
+                        app:cardCornerRadius="10dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/icon12"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginStart="7dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/ic_light" />
+
+                            <TextView
+                                android:id="@+id/text12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginStart="7dp"
+                                android:layout_marginTop="60dp"
+                                android:text="Living room"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:id="@+id/tt12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginStart="70dp"
+                                android:layout_marginTop="10dp"
+                                android:text="---"
+                                android:textColor="@color/white" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+                    ////3
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card21"
+                        android:layout_height="100dp"
+                        android:layout_row="1"
+                        android:layout_column="0"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="15dp"
+                        app:cardBackgroundColor="#A15A5252"
+                        app:cardCornerRadius="10dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/icon21"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginStart="7dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/ic_light_bulb" />
+
+                            <TextView
+                                android:id="@+id/textt13"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginStart="7dp"
+                                android:layout_marginTop="60dp"
+                                android:text="Kitchen"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:id="@+id/tt21"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginStart="70dp"
+                                android:layout_marginTop="10dp"
+                                android:text="---"
+                                android:textColor="@color/white" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+                    ///4
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card22"
+                        android:layout_height="100dp"
+                        android:layout_row="1"
+                        android:layout_column="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="15dp"
+                        app:cardBackgroundColor="#A15A5252"
+                        app:cardCornerRadius="10dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/icon22"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginStart="7dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/ic_lighi" />
+
+                            <TextView
+                                android:id="@+id/text21"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginStart="7dp"
+                                android:layout_marginTop="60dp"
+                                android:text="Bedroom"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:id="@+id/tt22"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginStart="70dp"
+                                android:layout_marginTop="10dp"
+                                android:text="---"
+                                android:textColor="@color/white" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+                </GridLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

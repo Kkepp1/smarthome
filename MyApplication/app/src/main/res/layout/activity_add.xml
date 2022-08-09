@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".add">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="170dp"
+        android:text=":"
+        android:textSize="30dp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/saveBtn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="SAVE"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:background="#F44336">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="300dp"
+        android:text="Repeat"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <CheckBox
+        android:id="@+id/repeat"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="290dp"
+        android:layout_marginEnd="60dp"
+        android:scaleX="1.5"
+        android:scaleY="1.5">
+
+    </CheckBox>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="350dp"
+        android:text="Appliance"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/A1TV"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="400dp"
+        android:background="#54120A0A"
+        android:text="Living room"
+        android:textAlignment="center"
+        android:textSize="25dp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/A2TV"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="400dp"
+
+        android:layout_toRightOf="@+id/A1TV"
+        android:background="#54120A0A"
+        android:text="kitchen"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/A3TV"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="450dp"
+        android:background="#54120A0A"
+        android:text="Bedroom"
+        android:textAlignment="center"
+        android:textSize="25dp">
+
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="500dp"
+        android:text="Mode"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textStyle="bold">
+
+    </TextView>
+    <TextView
+        android:id="@+id/OnTV"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="550dp"
+        android:background="#54120A0A"
+        android:text="On"
+        android:textAlignment="center"
+        android:textSize="25dp">
+
+    </TextView>
+    <TextView
+        android:id="@+id/OffTV"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="550dp"
+
+        android:layout_toRightOf="@+id/A1TV"
+        android:background="#54120A0A"
+        android:text="Off"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        >
+
+    </TextView>
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="33dp"
+        android:background="@drawable/ic_back">
+
+    </ImageView>
+    <NumberPicker
+        android:id="@+id/Num1"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/tv"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="20dp"
+
+        android:theme="@style/CardView.Light">
+
+    </NumberPicker>
+
+    <NumberPicker
+        android:id="@+id/Num2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tv"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+
+        android:layout_marginTop="100dp">
+    </NumberPicker>
+
+</RelativeLayout>
